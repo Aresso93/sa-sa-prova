@@ -278,10 +278,67 @@ Testo generico
     <p>Victor Frankenstein, a Swiss scientist, has a great ambition: to create intelligent life. But when his creature first stirs, he realizes he has made a monster. 
         A monster which, abandoned by his master and shunned by everyone who sees it, follows Dr Frankenstein to the very ends of the earth.</p>
 
+<!--<iframe>. Ho provato a inserire un altro link dallo stesso sito, ma per questioni di sicurezza Firefox lo blocca-->
+            <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/#map=15/44.3985/8.9409">
+</iframe>
+
+<!--<input>-->
+<label for="numero">scrivi un numero intero da 1 a 10:</label>
+
+<input type="text" id="numero" name="numero" required
+       minlength="1" maxlength="2" size="10">
+
+       <div>
+        <label for="nomeutente">Nome utente:</label>
+        <input type="text" id="nomeutente" name="nomeutente">
+    </div>
+    
+    <div>
+        <label for="pass">Password (almeno 8 caratteri, un geroglifico e il segreto della vita):</label>
+        <input type="password" id="pass" name="password"
+               minlength="8" required>
+    </div>
+    
+    <input type="submit" value="entra">       
+
 <!--<ins> e <del>-->
     <blockquote>
     Questo è il giorno <del>peggiore</del> <ins>migliore</ins> della mia vita (finora).
     </blockquote>
+
+<!--<kbd>-->
+
+    <p>Premi<kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>canc</kbd> per avere 100 euro gratis.</p>    
+
+<!--<mark>-->
+<p>
+Il nome dell'attore che ha interpretato Luke Skywalker è <mark>Mark</mark> Hamill    
+</p>
+
+<!--<meter>-->
+<p>
+    <label for="voglia">Voglia di farmi un panino:</label>
+
+    <meter id="voglia"
+           min="0" max="100"
+           low="33" high="66" optimum="80"
+           value="85">
+        at 50/100
+    </meter>    
+</p>
+
+<!--<pre> e la bellezza delle cose scritte in ASCII-->
+<pre>
+    ,    /-.
+    ((___/ __>
+    /      }
+    \ .--.(    ___
+ jgs \\   \\  /___\    
+</pre>    
 
 <!--<ruby> e i tag correlati-->
 
@@ -334,6 +391,18 @@ Testo generico
         <option value="parrot">Hamburger</option>
     </select>    
 
+<!--<style>-->
+
+    <style>
+        p {
+          color: #011863;
+        }
+        </style>
+        
+        <p>Ho imparato a scrivere in blu.</p>
+        
+        <p style="color: blue">Ora so scrivere in blu e sono inarrestabile.</p>    
+
 <!--<sub> e <sup>-->
 <p>    
 La formula dell'acqua è H<sub>2</sub>O <br>
@@ -341,6 +410,69 @@ La formula dell'acqua è H<sub>2</sub>O <br>
 16 = 2<sup>3</sup>
 
 </p>
+<!--<table> e tag correlati per ripassare le tabelle-->
+
+    <table>
+        <caption>Cose tabellose</caption>
+        <tr>
+            <th scope="col">Voce 1</th>
+            <th scope="col">Voce 2</th>
+            <th scope="col">Voce 3</th>
+        </tr>
+        <tr>
+            <th scope="row">Cosa 1</th>
+            <td>Cosa 2</td>
+            <td>Cosa 3</td>
+        </tr>
+        <tr>
+            <th scope="row">Elemento 1</th>
+            <td>Elemento 2</td>
+            <td>Elemento 3</td>
+        </tr>
+        <tr>
+            <th scope="row">Boh 1</th>
+            <td>Boh 2</td>
+            <td>Boh 3</td>
+        </tr>
+    </table>
+        
+
+<!--<template> l'ho copiato pari pari per capire come e se funziona col solo HTML-->
+
+    <table id="producttable">
+        <thead>
+          <tr>
+            <td>UPC_Code</td>
+            <td>Product_Name</td>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+      
+      <template id="productrow">
+        <tr>
+          <td class="record"></td>
+          <td></td>
+        </tr>
+      </template>
+      
+<!--<track>-->
+
+<video controls
+       src="https://y.yarn.co/66aa03ae-5b51-4484-8116-f628c0f245e8.mp4">
+    <track default
+           kind="captions"
+           srclang="en"
+           src="https://y.yarn.co/66aa03ae-5b51-4484-8116-f628c0f245e8.mp4">
+    Download the
+    <a href="https://y.yarn.co/66aa03ae-5b51-4484-8116-f628c0f245e8.mp4">MP4</a>
+    video, and
+    <a href="https://y.yarn.co/66aa03ae-5b51-4484-8116-f628c0f245e8.mp4">subtitles</a>.
+</video>
+
+
 <!--<wbr>, che però non funziona come pensavo-->
 <p>
 Nel mezzo del cammin di nostra vita<wbr> mi ritrovai per una selva oscura</wbr><wbr> ché la diritta via era smarrita</wbr>    
