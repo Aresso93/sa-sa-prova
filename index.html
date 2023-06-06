@@ -206,9 +206,13 @@ che lo contengono è qualcosa che devo ancora capire bene-->
 </dl>
 <hr>
 <!--<dfn>-->
-
 <p>Dicesi <dfn id="def-programmatore">programmatore</dfn> una persona che non scrive commenti quanto dovrebbe.</p>
 
+<!--<detail> e <summary>-->
+    <details>
+        <summary>Apri per un messaggio segreto</summary>
+        <a href="https://static.ohga.it/wp-content/uploads/sites/24/2021/08/iStock-90851578.jpg" target="_blank">Clicca</a> per un messaggio segretissimo 
+    </details>    
 <figure>
     <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
          alt="Homer Simpson">
@@ -227,8 +231,57 @@ che lo contengono è qualcosa che devo ancora capire bene-->
           rows="8" cols="40">  
 Testo generico
 </textarea>
+
+<!--<dialog>-->
+    <dialog open>
+        <p>Mi offri tu il pranzo?</p>
+        <form method="dialog">
+          <button>Anche volendo posso cliccare solo questo...</button>
+        </form>
+      </dialog>
+      
+<!--<embed>. Sono riuscito a inserire il video ma non la gif-->
+    <embed type="picture/gif"
+       src="https://media4.giphy.com/media/CLnmxQqmk6X16/giphy.gif"
+       width="250"
+       height="200">
+       <embed type="video/mp4"
+       src="https://y.yarn.co/02c105f0-556a-4a93-a8c8-5fc17988f3f3.mp4"
+       width="250"
+       height="200">
+
+<!--<form>-->
+    <form>
+        <fieldset>
+          <legend>Scegli cosa mangiamo stasera</legend>
+      
+          <input type="radio" id="pizza" name="cibo" value="P">
+          <label for="pizza">Pizza</label><br>
+      
+          <input type="radio" id="sushi" name="cibo" value="S">
+          <label for="sushi">Sushi</label><br>
+      
+          <input type="radio" id="hamburger" name="cibo" value="H">
+          <label for="hamburger">Hamburger</label>
+        </fieldset>
+      </form>
+      
+       
 <!--<q> per le citazioni-->
 <p>Per dirla con le parole di Oscar Wilde: <q cite="https://www.goodreads.com/quotes/19884-be-yourself-everyone-else-is-already-taken">Sii te stesso: tutti gli altri sono già presi</q></p>
+
+<!--<hgroup>-->
+    <hgroup>
+        <h1>Frankenstein</h1>
+        <p>Or: The Modern Prometheus</p>
+    </hgroup>
+    <p>Victor Frankenstein, a Swiss scientist, has a great ambition: to create intelligent life. But when his creature first stirs, he realizes he has made a monster. 
+        A monster which, abandoned by his master and shunned by everyone who sees it, follows Dr Frankenstein to the very ends of the earth.</p>
+
+<!--<ins> e <del>-->
+    <blockquote>
+    Questo è il giorno <del>peggiore</del> <ins>migliore</ins> della mia vita (finora).
+    </blockquote>
 
 <!--<ruby> e i tag correlati-->
 
@@ -281,6 +334,13 @@ Testo generico
         <option value="parrot">Hamburger</option>
     </select>    
 
+<!--<sub> e <sup>-->
+<p>    
+La formula dell'acqua è H<sub>2</sub>O <br>
+
+16 = 2<sup>3</sup>
+
+</p>
 <!--<wbr>, che però non funziona come pensavo-->
 <p>
 Nel mezzo del cammin di nostra vita<wbr> mi ritrovai per una selva oscura</wbr><wbr> ché la diritta via era smarrita</wbr>    
