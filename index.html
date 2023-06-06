@@ -7,15 +7,40 @@
     <title>Prove varie</title>
 </head>
 <body>
-
+<!--Segue prova del tag <abbr>-->
 <p>
 Un <abbr>CD</abbr> (compact disc) è un supporto di memoria che può contenere dei dati.   
 </p>
 
+<!--Segue prova del tag <address>-->
 Indirizzo email d'esempio:
 <address>
 <a href="mailto:utente@dominio.com">utente@dominio.com</a>    
 </address>
+
+<!--<area, quello che trovo meno intuitivo per adesso>-->
+
+<map name="infographic">
+    <area shape="poly" coords="129,0,260,95,129,138"
+          href="https://developer.mozilla.org/docs/Web/HTTP"
+          target="_blank" alt="HTTP">
+    <area shape="poly" coords="260,96,209,249,130,138"
+          href="https://developer.mozilla.org/docs/Web/HTML"
+          target="_blank" alt="HTML">
+    <area shape="poly" coords="209,249,49,249,130,139"
+          href="https://developer.mozilla.org/docs/Web/JavaScript"
+          target="_blank" alt="JavaScript">
+    <area shape="poly" coords="48,249,0,96,129,138"
+          href="https://developer.mozilla.org/docs/Web/API"
+          target="_blank" alt="Web APIs">
+    <area shape="poly" coords="0,95,128,0,128,137"
+          href="https://developer.mozilla.org/docs/Web/CSS"
+          target="_blank" alt="CSS">
+</map>
+<img usemap="#infographic" src="/media/examples/mdn-info.png" alt="MDN infographic">
+
+
+<!--<article>-->
 
 <article class="forecast">
     <h1>Cose da fare</h1>
@@ -32,13 +57,19 @@ Indirizzo email d'esempio:
         <p>Programmare nel sonno.</p>
     </article>
 </article>
+
+<!--<hr>-->
 <hr>
+
+<!--<aside> che non funziona, ma ci arriveremo-->
 
 <p>La mia pagina è scritta tutta in HTML, quindi noto che certi tag non funzionano al 100%.</p>
 
 <aside>
     <p>L'aside che non funziona bene perché non c'è CSS.</p>
 </aside>
+
+<!--<audio> invece funziona tranquillamente-->
 
 <figure>
 <figcaption>Audiobook di Peter Pan:</figcaption>
@@ -51,14 +82,133 @@ Pietro Pane
 </audio>
 </figure>
 
-<p>Il mio nome al contrario: <span dir="rtl">Ares Fiumicelli</span></p>
+<p>Il mio nome scritto da destra a sinistra: <bdo dir="rtl">Ares</bdo></p>
 
+<!--Credo di aver capito lo scopo per cui si utilizza <base>, ma come scrivere tag 
+che lo contengono è qualcosa che devo ancora capire bene-->
+
+<!--<bdi> copiato pari papri dall'esempio perché non mi torna benissimo-->
+
+    <h1>World wrestling championships</h1>
+
+<ul>
+   <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+   <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+   <li><span class="name">سما</span>: 3rd place</li>
+   <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+   <li><span class="name" dir="auto">سما</span>: 5th place</li>
+</ul>
+
+<!--<button> va bene-->
+
+<button class="favorite styled"
+        type="button">
+    Premi il bottone, sai di volerlo fare
+</button>
+<p>
 <code>{s}</code> è una stringa di codice che si usa nelle wiki per sbarrare il testo al posto del tag corrispondente in HTML
+</p>
 
+<!--<canvas> mi confonde-->
+
+<canvas width="200" height="200">
+  Testo di prova del tag canvas
+  </canvas>
+
+<!--<caption> all'interno delle tabelle-->
+
+<table>
+<caption>He-Man and Skeletor facts</caption>
+    <tr>
+        <td> </td>
+        <th scope="col" class="heman">He-Man</th>
+        <th scope="col" class="skeletor">Skeletor</th>
+    </tr>
+    <tr>
+        <th scope="row">Role</th>
+        <td>Hero</td>
+        <td>Villain</td>
+    </tr>
+    <tr>
+        <th scope="row">Weapon</th>
+        <td>Power Sword</td>
+        <td>Havoc Staff</td>
+    </tr>
+    <tr>
+        <th scope="row">Dark secret</th>
+        <td>Expert florist</td>
+        <td>Cries at romcoms</td>
+    </tr>
+</table>  
+
+<!--Testi modificati vari-->  
+<p>
 <i>Testo corsivo</i><br>
 <b>Testo grassetto</b><br>
 <s>Testo sbarrato</s><br>
+</p>
 <hr>
+
+<!--<col> all'interno di tabelle-->
+
+<table>
+    <caption>Superheros and sidekicks</caption>
+    <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <td> </td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+    </tr>
+    <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+    </tr>
+</table>
+
+<!--<data>-->
+<p>Personaggi disponibili:</p>
+<ul>
+    <li><data value="1">Steve</data></li>
+    <li><data value="2">Frank</data></li>
+    <li><data value="3">Amanda</data></li>
+</ul>
+
+<!--<datalist>-->
+    <label for="SitcomAnimate">Scegli la tua sitcom animata preferita:</label>
+    <input list="sitcom" id="SitcomAnimate" name="SitcomAnimate"/>
+    
+    <datalist id="sitcom">
+        <option value="I Simpson"></option>
+        <option value="Futurama"></option>
+        <option value="I Griffin"></option>
+        <option value="Rick & Morty"></option>
+        <option value="Bob's Burgers"></option>
+    </datalist>
+<!--<dl>, <dt> e <dd>-->
+<p>Lista della spesa:</p>
+
+<dl>
+    <dt>Acqua</dt>
+    <dd>Liquido indispensabile per la vita</dd>
+
+    <dt>Vino</dt>
+    <dd>Liquido indispensabile per la vita</dd>
+
+</dl>
+<hr>
+<!--<dfn>-->
+
+<p>Dicesi <dfn id="def-programmatore">programmatore</dfn> una persona che non scrive commenti quanto dovrebbe.</p>
+
 <figure>
     <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
          alt="Homer Simpson">
@@ -77,6 +227,61 @@ Pietro Pane
           rows="8" cols="40">  
 Testo generico
 </textarea>
+<!--<q> per le citazioni-->
+<p>Per dirla con le parole di Oscar Wilde: <q cite="https://www.goodreads.com/quotes/19884-be-yourself-everyone-else-is-already-taken">Sii te stesso: tutti gli altri sono già presi</q></p>
+
+<!--<ruby> e i tag correlati-->
+
+    <p>
+<ruby>
+Ω <rp>(</rp><rt>omega</rt><rp>)</rp>   
+</ruby>    
+</p>
+<hr>
+
+<!--<samp> (non la squadra genovese)-->
+
+<p>Come mai ogni volta che provo a scrivere del codice Visual Studio mi dice:</p>
+
+<p><samp>Error: brain now found?</samp></p>
+
+<!--
+    <script>, commentato per evitare alert rompini (ma l'ho testato e so che funziona)
+
+    <script>
+        alert("Ciao, Andrea!");
+      </script>
+      
+    -->
+
+<!--<section>-->
+    
+    <h1>Imparare a usare un nuovo tag</h1>
+    <section>
+        <h2>Step 1</h2>
+        <p>Leggere che cosa fa</p>
+    </section>
+    
+    <section>
+        <h2>Step 2</h2>
+        <p>Provare a scrivere qualcosa sperando di non far esplodere internet</p>
+    </section> 
+
+<hr>
+
+<!--<select>-->
+
+    <label for="selezione-cibo">Scegli un solo cibo:</label>
+
+    <select name="cibo" id="selezione-cibo">
+        <option value="">--Scegli un cibo--</option>
+        <option value="dog">Pizza</option>
+        <option value="cat">Sushi</option>
+        <option value="hamster">Cioccolato</option>
+        <option value="parrot">Hamburger</option>
+    </select>    
+
+<!--<wbr>, che però non funziona come pensavo-->
 <p>
 Nel mezzo del cammin di nostra vita<wbr> mi ritrovai per una selva oscura</wbr><wbr> ché la diritta via era smarrita</wbr>    
 </p>
@@ -84,9 +289,18 @@ Nel mezzo del cammin di nostra vita<wbr> mi ritrovai per una selva oscura</wbr><
 
 <p>Il <time datetime="2023-06-02">2 giugno i miei amici mi hanno organizzato una festa a sorpresa</time> che è iniziata alle <time datetime="20:30">20:30</time> ed è durata almeno <time datetime="PT4H0M">4 ore</time>.</p>
 
+<!--<u>-->
+
 <p>
 <u>Lo</u> mio <u>itagliano e</u> molto <u>carrente</u>    
 </p>
+
+<!--<var>-->
+
+<p>L'area di un triangolo si calcola con la formula <var>b</var> × <var>h</var> / 2, dove <var>b</var> è la base e <var>h</var> l'altezza del triangolo.</p>
+
+
+<!--<video>-->
 <video src="https://www.youtube.com/watch?v=a8DM-tD9w2I">Un video molto breve</video>
 
 <video controls width="250">
