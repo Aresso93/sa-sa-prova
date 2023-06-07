@@ -330,6 +330,39 @@ Il nome dell'attore che ha interpretato Luke Skywalker è <mark>Mark</mark> Hami
         at 50/100
     </meter>    
 </p>
+<hr>
+<!--<object>-->
+    <object type="application/pdf"
+    data="https://www.axiaformazione.it/docs/info-corso-programmatore-front-end-ediz-2.pdf"
+    width="250"
+    height="200">
+</object>    
+
+<!--<optgroup>-->
+<p>
+    <label for="game-select">Scegli un gioco:</label>
+<select id="game-select">
+    <optgroup label="Da tavolo">
+        <option>Risiko!</option>
+        <option>Monopoly</option>
+        <option>Scarabeo</option>
+    </optgroup>
+    <optgroup label="Videogioco">
+        <option>Dark Souls</option>
+        <option>Tetris</option>
+        <option>Tekken 7</option>
+    </optgroup>
+</select>
+</p>
+
+<!--<output> copiato pari pari perché dovrei capirlo meglio in classe-->
+<p>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="b" name="b" value="50" /> +
+    <input type="number" id="a" name="a" value="10" /> =
+    <output name="result" for="a b">60</output>
+  </form>
+</p>  
 
 <!--<pre> e la bellezza delle cose scritte in ASCII-->
 <pre>
@@ -339,6 +372,20 @@ Il nome dell'attore che ha interpretato Luke Skywalker è <mark>Mark</mark> Hami
     \ .--.(    ___
  jgs \\   \\  /___\    
 </pre>    
+
+<!--<picture> copiato così com'era-->
+
+    <picture>
+        <source srcset="/media/cc0-images/surfer-240-200.jpg"
+                media="(orientation: portrait)">
+        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="">
+    </picture>    
+
+<!--<progress>-->
+    <label for="file">Caricamento:</label>
+
+    <progress id="file" max="100" value="50"> 50% </progress>
+    
 
 <!--<ruby> e i tag correlati-->
 
@@ -390,6 +437,13 @@ Il nome dell'attore che ha interpretato Luke Skywalker è <mark>Mark</mark> Hami
         <option value="hamster">Cioccolato</option>
         <option value="parrot">Hamburger</option>
     </select>    
+
+<!--<small>-->
+<p>
+<small>Testo piccolo</small>
+<small><small>Testo minuscolo</small></small>    
+<small><small><small>Testo minuscolissimo</small></small></small>
+</p>
 
 <!--<style>-->
 
@@ -501,5 +555,12 @@ Nel mezzo del cammin di nostra vita<wbr> mi ritrovai per una selva oscura</wbr><
 
 </video>
 
+<!--<menu> usato senza il resto dell'esempio per osservare la differenza con <ul>-->
+<p>
+<menu>
+    <li><button id="save">Save for later</button></li>
+    <li><button id="share">Share this news</button></li>
+</menu>
+</p>
 </body>
 </html>
